@@ -1,0 +1,257 @@
+{
+    // snippets for XAML
+    
+    "Button for XAML": {
+        "prefix": "btn",
+        "body": "<Button Content=\"${1:Button}\" Margin=\"5\" />"
+    },
+    "Button x:Name... for XAML": {
+        "prefix": "btn#",
+        "body": "<Button x:Name=\"${1:btn1}\" Content=\"${2:Button}\" Margin=\"5\" />"
+    },
+    "CheckBox for XAML": {
+        "prefix": "check",
+        "body": "<CheckBox Content=\"${1:CheckBox}\" IsChecked=\"${2:True}\" Margin=\"5\" />"
+    },
+    "CheckBox x:Name... for XAML": {
+        "prefix": "check#",
+        "body": "<CheckBox x:Name=\"${1:check1}\" Content=\"${2:CheckBox}\" IsChecked=\"${3:True}\" Margin=\"5\" />"
+    },
+    "RadioButton for XAML": {
+        "prefix": "radio",
+        "body": "<RadioButton Content=\"${1:RadioButton}\" IsChecked=\"${2:True}\" Margin=\"5\" />"
+    },
+    "RadioButton x:Name... for XAML": {
+        "prefix": "radio#",
+        "body": "<RadioButton x:Name=\"${1:radio1}\" Content=\"${2:RadioButton}\" IsChecked=\"${3:True}\" Margin=\"5\" />"
+    },
+    "Label for XAML": {
+        "prefix": "lbl",
+        "body": "<Label Content=\"${1:Label}\" Margin=\"5\" />"
+    },
+    "TextBlock for XAML": {
+        "prefix": "tblk",
+        "body": "<TextBlock Text=\"${1:TextBlock}\" Margin=\"5\" />"
+    },
+    "TextBox for XAML": {
+        "prefix": "tbx",
+        "body": "<TextBox Text=\"${1:TextBox}\" Margin=\"5\" />"
+    },
+    "TextBox x:Name... for XAML": {
+        "prefix": "tbx#",
+        "body": "<TextBox x:Name=\"${1:txt1}\" Text=\"${2:TextBox}\" Margin=\"5\" />"
+    },
+    "Label+TextBox for XAML": {
+        "prefix": "lbl+tbx",
+        "body": [
+            "<Label Content=\"${1:Item Name1}\" Margin=\"5,5,5,0\" Padding=\"0\" />",
+            "<TextBox Text=\"${2:Item Value1}\" Margin=\"5,0,5,5\" />",
+        ]
+    },
+    "TextBlock+TextBox for XAML": {
+        "prefix": "tblk+tbx",
+        "body": [
+            "<TextBlock Text=\"${1:Item Name1}\" Margin=\"5,5,5,0\" />",
+            "<TextBox Text=\"${2:Item Value1}\" Margin=\"5,0,5,5\" />",
+        ]
+    },
+    "ListBox for XAML": {
+        "prefix": "list",
+        "body": "<ListBox ItemsSource=\"$1\" SelectedIndex=\"0\" Margin=\"5\" />"
+    },
+    "ListBox x:Name... for XAML": {
+        "prefix": "list#",
+        "body": "<ListBox x:Name=\"${1:list1}\" ItemsSource=\"$2\" SelectedIndex=\"0\" Margin=\"5\" />"
+    },
+    "ListBox>ListBoxItem for XAML": {
+        "prefix": "list>li",
+        "body": [
+            "<ListBox SelectedIndex=\"0\" Margin=\"5\">",
+            "    <ListBoxItem Content=\"${1:item1}\" />",
+            "</ListBox>",
+        ]
+    },
+    "ComboBox for XAML": {
+        "prefix": "combo",
+        "body": "<ComboBox ItemsSource=\"$1\" SelectedIndex=\"0\" Margin=\"5\" />"
+    },
+    "ComboBox x:Name... for XAML": {
+        "prefix": "combo#",
+        "body": "<ComboBox x:Name=\"${1:combo1}\" ItemsSource=\"$2\" SelectedIndex=\"0\" Margin=\"5\" />"
+    },
+    "ComboBox>ComboBoxItem for XAML": {
+        "prefix": "combo>ci",
+        "body": [
+            "<ComboBox SelectedIndex=\"0\" Margin=\"5\">",
+            "    <ComboBoxItem Content=\"${1:item1}\" />",
+            "</ComboBox>",
+        ]
+    },
+    "Border for XAML": {
+        "prefix": "border",
+        "body": "<Border BorderBrush=\"${1:Black}\" BorderThickness=\"1\" Height=\"100\" Width=\"100\" />"
+    },
+    "Rectangle for XAML": {
+        "prefix": "rect",
+        "body": "<Rectangle Fill=\"${1:LightGray}\" Height=\"100\" Width=\"100\" Stroke=\"Black\" />"
+    },
+    "Image for XAML": {
+        "prefix": "img",
+        "body": "<Image Source=\"${1:image1.png}\" />"
+    },
+    "Grid for XAML": {
+        "prefix": "grid",
+        "body": "<Grid>$1</Grid>"
+    },
+    "StackPanel for XAML": {
+        "prefix": "stack",
+        "body": "<StackPanel>$1</StackPanel>"
+    },
+    "Horizontal StackPanel for XAML": {
+        "prefix": "stackh",
+        "body": "<StackPanel Orientation=\"Horizontal\">$1</StackPanel>"
+    },
+    "WrapPanel for XAML": {
+        "prefix": "wrap",
+        "body": "<WrapPanel>$1</WrapPanel>"
+    },
+    "DockPanel for XAML": {
+        "prefix": "dock",
+        "body": "<DockPanel>$1</DockPanel>"
+    },
+    "Grid RowDefinition for XAML": {
+        "prefix": "rd",
+        "body": "<RowDefinition Height=\"${1:1*}\" />$2"
+    },
+    "Grid RowDefinitions for XAML": {
+        "prefix": "rds",
+        "body": "<Grid.RowDefinitions>$1</Grid.RowDefinitions>"
+    },
+    "Grid ColumnDefinition for XAML": {
+        "prefix": "cd",
+        "body": "<ColumnDefinition Width=\"${1:1*}\" />$2"
+    },
+    "Grid ColumnDefinitions for XAML": {
+        "prefix": "cds",
+        "body": "<Grid.ColumnDefinitions>$1</Grid.ColumnDefinitions>"
+    },
+    "StackPanel>Button*3 for XAML": {
+        "prefix": "stack>btn*3",
+        "body": [
+            "<StackPanel>",
+            "    <Button Content=\"Button1\" Margin=\"5,5,5,0\" />",
+            "    <Button Content=\"Button2\" Margin=\"5,5,5,0\" />",
+            "    <Button Content=\"Button3\" Margin=\"5,5,5,0\" />$1",
+            "</StackPanel>",
+        ]
+    },
+    "Horizontal StackPanel>Button*3 for XAML": {
+        "prefix": "stackh>btn*3",
+        "body": [
+            "<StackPanel Orientation=\"Horizontal\">",
+            "    <Button Content=\"Button1\" Margin=\"5,5,0,5\" />",
+            "    <Button Content=\"Button2\" Margin=\"5,5,0,5\" />",
+            "    <Button Content=\"Button3\" Margin=\"5,5,0,5\" />$1",
+            "</StackPanel>",
+        ]
+    },
+    "2 rows Grid for XAML": {
+        "prefix": "rds>rd*2",
+        "body": [
+            "<Grid.RowDefinitions>",
+            "    <RowDefinition Height=\"${1:1*}\" />",
+            "    <RowDefinition Height=\"${2:1*}\" />",
+            "</Grid.RowDefinitions>",
+        ]
+    },
+    "3 rows Grid for XAML": {
+        "prefix": "rds>rd*3",
+        "body": [
+            "<Grid.RowDefinitions>",
+            "    <RowDefinition Height=\"${1:1*}\" />",
+            "    <RowDefinition Height=\"${2:1*}\" />",
+            "    <RowDefinition Height=\"${3:1*}\" />",
+            "</Grid.RowDefinitions>",
+        ]
+    },
+    "2 columns Grid for XAML": {
+        "prefix": "cds>cd*2",
+        "body": [
+            "<Grid.ColumnDefinitions>",
+            "    <ColumnDefinition Width=\"${1:1*}\" />",
+            "    <ColumnDefinition Width=\"${2:1*}\" />",
+            "</Grid.ColumnDefinitions>",
+        ]
+    },
+    "3 columns Grid for XAML": {
+        "prefix": "cds>cd*3",
+        "body": [
+            "<Grid.ColumnDefinitions>",
+            "    <ColumnDefinition Width=\"${1:1*}\" />",
+            "    <ColumnDefinition Width=\"${2:1*}\" />",
+            "    <ColumnDefinition Width=\"${3:1*}\" />",
+            "</Grid.ColumnDefinitions>",
+        ]
+    },
+    "Style for XAML": {
+        "prefix": "style",
+        "body": "<Style TargetType=\"${1:Button}\">$2</Style>"
+    },
+    "Style x:Key... for XAML": {
+        "prefix": "style#",
+        "body": "<Style x:Key=\"${1:key1}\" TargetType=\"${2:Button}\">$3</Style>"
+    },
+    "Window Resources for XAML": {
+        "prefix": "winres",
+        "body": "<Window.Resources>$1</Window.Resources>"
+    },
+    "Page Resources for XAML": {
+        "prefix": "pgres",
+        "body": "<Page.Resources>$1</Page.Resources>"
+    },
+    "UserControl Resources for XAML": {
+        "prefix": "ucres",
+        "body": "<UserControl.Resources>$1</UserControl.Resources>"
+    },
+    "Setter for XAML": {
+        "prefix": "set",
+        "body": "<Setter Property=\"${1:Background}\" Value=\"${2:Red}\" />$3"
+    },
+    "#Region for XAML": {
+        "prefix": "#region",
+        "body": [
+            "<!--#region ${1:NewRegion} -->",
+            "$2<!--#endregion-->",
+        ]
+    },
+    "d:DataContext for XAML": {
+        "prefix": "ddc",
+        "body": "d:DataContext=\"{d:DesignInstance Type=${1:vm:MyViewModel}, IsDesignTimeCreatable=True}\"$2"
+    },
+    "Menu for XAML": {
+        "prefix": "menu",
+        "body": "<Menu>$1</Menu>"
+    },
+    "Menu>MenuItem for XAML": {
+        "prefix": "menu>mi",
+        "body": [
+            "<Menu>",
+            "    <MenuItem Header=\"${1:Item1}\" />$2",
+            "</Menu>",
+        ]
+    },
+    "ContextMenu for XAML": {
+        "prefix": "cmenu",
+        "body": "<ContextMenu>$1</ContextMenu>"
+    },
+    "ContextMenu>MenuItem for XAML": {
+        "prefix": "cmenu>mi",
+        "body": [
+            "<ContextMenu>",
+            "    <MenuItem Header=\"${1:Item1}\" />$2",
+            "</ContextMenu>",
+        ]
+    },
+
+
+}
