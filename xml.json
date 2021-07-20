@@ -67,7 +67,7 @@
         "prefix": "list>li",
         "body": [
             "<ListBox SelectedIndex=\"0\" Margin=\"5\">",
-            "    <ListBoxItem Content=\"${1:item1}\" />",
+            "    <ListBoxItem Content=\"${1:item1}\" />$2",
             "</ListBox>",
         ]
     },
@@ -83,7 +83,7 @@
         "prefix": "combo>ci",
         "body": [
             "<ComboBox SelectedIndex=\"0\" Margin=\"5\">",
-            "    <ComboBoxItem Content=\"${1:item1}\" />",
+            "    <ComboBoxItem Content=\"${1:item1}\" />$2",
             "</ComboBox>",
         ]
     },
@@ -101,23 +101,43 @@
     },
     "Grid for XAML": {
         "prefix": "grid",
-        "body": "<Grid>$1</Grid>"
+        "body": [
+            "<Grid>",
+            "    $1",
+            "</Grid>",
+        ]
     },
     "StackPanel for XAML": {
         "prefix": "stack",
-        "body": "<StackPanel>$1</StackPanel>"
+        "body": [
+            "<StackPanel>",
+            "    $1",
+            "</StackPanel>",
+        ]
     },
     "Horizontal StackPanel for XAML": {
         "prefix": "stackh",
-        "body": "<StackPanel Orientation=\"Horizontal\">$1</StackPanel>"
+        "body": [
+            "<StackPanel Orientation=\"Horizontal\">",
+            "    $1",
+            "</StackPanel>",
+        ]
     },
     "WrapPanel for XAML": {
         "prefix": "wrap",
-        "body": "<WrapPanel>$1</WrapPanel>"
+        "body": [
+            "<WrapPanel>",
+            "    $1",
+            "</WrapPanel>",
+        ]
     },
     "DockPanel for XAML": {
         "prefix": "dock",
-        "body": "<DockPanel>$1</DockPanel>"
+        "body": [
+            "<DockPanel>",
+            "    $1",
+            "</DockPanel>",
+        ]
     },
     "Grid RowDefinition for XAML": {
         "prefix": "rd",
@@ -125,7 +145,11 @@
     },
     "Grid RowDefinitions for XAML": {
         "prefix": "rds",
-        "body": "<Grid.RowDefinitions>$1</Grid.RowDefinitions>"
+        "body": [
+            "<Grid.RowDefinitions>",
+            "    $1",
+            "</Grid.RowDefinitions>",
+        ]
     },
     "Grid ColumnDefinition for XAML": {
         "prefix": "cd",
@@ -133,7 +157,11 @@
     },
     "Grid ColumnDefinitions for XAML": {
         "prefix": "cds",
-        "body": "<Grid.ColumnDefinitions>$1</Grid.ColumnDefinitions>"
+        "body": [
+            "<Grid.ColumnDefinitions>",
+            "    $1",
+            "</Grid.ColumnDefinitions>",
+        ]
     },
     "StackPanel>Button*3 for XAML": {
         "prefix": "stack>btn*3",
@@ -195,23 +223,43 @@
     },
     "Style for XAML": {
         "prefix": "style",
-        "body": "<Style TargetType=\"${1:Button}\">$2</Style>"
+        "body": [
+            "<Style TargetType=\"${1:Button}\">",
+            "    $2",
+            "</Style>",
+        ]
     },
     "Style x:Key... for XAML": {
         "prefix": "style#",
-        "body": "<Style x:Key=\"${1:key1}\" TargetType=\"${2:Button}\">$3</Style>"
+        "body": [
+            "<Style x:Key=\"${1:key1}\" TargetType=\"${2:Button}\">",
+            "    $3",
+            "</Style>",
+        ]
     },
     "Window Resources for XAML": {
         "prefix": "winres",
-        "body": "<Window.Resources>$1</Window.Resources>"
+        "body": [
+            "<Window.Resources>",
+            "    $1",
+            "</Window.Resources>",
+        ]
     },
     "Page Resources for XAML": {
         "prefix": "pgres",
-        "body": "<Page.Resources>$1</Page.Resources>"
+        "body": [
+            "<Page.Resources>",
+            "    $1",
+            "</Page.Resources>",
+        ]
     },
     "UserControl Resources for XAML": {
         "prefix": "ucres",
-        "body": "<UserControl.Resources>$1</UserControl.Resources>"
+        "body": [
+            "<UserControl.Resources>",
+            "    $1",
+            "</UserControl.Resources>",
+        ]
     },
     "Setter for XAML": {
         "prefix": "set",
@@ -230,7 +278,11 @@
     },
     "Menu for XAML": {
         "prefix": "menu",
-        "body": "<Menu>$1</Menu>"
+        "body": [
+            "<Menu>",
+            "    $1",
+            "</Menu>",
+        ]
     },
     "Menu>MenuItem for XAML": {
         "prefix": "menu>mi",
@@ -242,7 +294,11 @@
     },
     "ContextMenu for XAML": {
         "prefix": "cmenu",
-        "body": "<ContextMenu>$1</ContextMenu>"
+        "body": [
+            "<ContextMenu>",
+            "    $1",
+            "</ContextMenu>",
+        ]
     },
     "ContextMenu>MenuItem for XAML": {
         "prefix": "cmenu>mi",
